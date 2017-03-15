@@ -1,0 +1,22 @@
+html{box-sizing:border-box;}
+* , *:before , *:after{box-sizing:inherit;}
+
+
+body {
+	margin:0;
+}
+
+#timer {
+	color:white;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:70px;
+	line-height:100%;
+	font-weight:bold;
+	text-align:center;
+	padding:0;
+	margin:auto;
+
+	position:relative;
+	top:300px;
+
+}
