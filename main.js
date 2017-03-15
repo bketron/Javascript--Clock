@@ -9,7 +9,7 @@ $(document).ready(function(){
 		var hour = d.getHours()
 		var min = d.getMinutes()
 		var sec = d.getSeconds()
-		var amPm = ""
+		var amPm = ''
 		var colorHex = ""
 
 
@@ -20,6 +20,15 @@ $(document).ready(function(){
 		if(hour > 12) {
 			hour = hour - 12
 			amPm = "p.m."
+		}
+
+		if(hour === 12) {
+			hour = 12
+			amPm = "p.m."
+		}
+
+		if(hour === 0) {
+			hour = 1
 		}
 
 		if(hour < 12) {
